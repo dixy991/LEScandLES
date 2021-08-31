@@ -1,0 +1,255 @@
+* {
+  font-size: 17px;
+  font-family: 'Solway', serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#carouselExampleCaptions .carousel-caption {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 20%;
+  border-radius: 20px;
+}
+
+#carouselExampleCaptions h1 {
+  color: #1d0b0b;
+  font-size: 35px;
+}
+
+#carouselExampleCaptions p {
+  color: #000000;
+  font-size: 30px;
+}
+
+#meni a {
+  font-size: 27px;
+  color: #603e68 !important;
+}
+
+#kategorije h2::after, #mirisi h2::after, #kupi h2::after {
+  display: block;
+  height: 5px;
+  content: " ";
+  text-shadow: none;
+  background-color: #8D5A97;
+  width: 30%;
+  margin-left: 35%;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+label {
+  color: #000;
+  font-size: 25px;
+}
+
+#sneg {
+  background-image: url("../img/sneg.gif");
+  background-size: cover;
+}
+
+#sneg .kartice .card img, #sneg .korpa .card img {
+  height: 250px;
+}
+
+#sneg .kartice a, #sneg .korpa a {
+  border: 1px solid #907F9F;
+}
+
+#sneg button {
+  background-color: #BCC4DB;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#mirisi button, #forma button {
+  background-color: #BCC4DB;
+}
+
+#favorito {
+  background-image: url("../img/slajduj0.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 550px;
+}
+
+#izaForme {
+  background-image: url("../img/zis.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.povecaj {
+  border: 0.5px solid #d1a8a8;
+  display: table;
+  width: 50%;
+  float: left;
+}
+
+.povecaj input[type="text"] {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+}
+
+.povecaj .minus, .povecaj .plus {
+  font-size: 2em;
+  display: table-cell;
+  cursor: pointer;
+  line-height: 1;
+  vertical-align: middle;
+  width: 30px;
+  background-color: #d1a8a8;
+}
+
+.dodaj {
+  width: 30%;
+  border: 0.5px solid #d1a8a8;
+  float: left;
+  height: 40px;
+  cursor: pointer;
+}
+
+.prosoHover {
+  position: relative;
+}
+
+.slikaIspod {
+  opacity: 1;
+  display: block;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.srednje {
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.tekstPreko {
+  background-color: #8D5A97;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.opasiti {
+  opacity: 1;
+}
+
+.opasitiSlike {
+  opacity: 0.3;
+}
+
+#jelRadiOvo {
+  height: 78%;
+  position: relative;
+}
+
+#jelRadiOvo img {
+  position: absolute;
+}
+
+#strelica {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  z-index: 1;
+}
+
+#strelica i {
+  color: #8D5A97;
+  font-size: 2rem;
+}
+
+#bojaFutera {
+  background-color: #B98EA7;
+}
+
+#bojaFutera a {
+  color: black;
+}
+
+#forma span {
+  color: #db2d2d;
+}
+
+@media screen and (max-width: 980px) {
+  #carouselExampleCaptions .carousel-caption {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10%;
+  }
+  #carouselExampleCaptions h1 {
+    color: #54255e;
+    font-size: 30px;
+  }
+  #carouselExampleCaptions p {
+    color: #000000;
+    font-size: 25px;
+  }
+  #kategorije, .kartice, #mirisi, #karauselpa, #favorito.slicke {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  #kategorije, .kartice, #mirisi, #karauselpa, #favorito {
+    padding: 50px;
+  }
+  #futer {
+    text-align: center;
+  }
+  #jelRadiOvo {
+    height: 350px;
+  }
+  #jelRadiOvo img {
+    height: 100%;
+  }
+  .slicke .col-md-6 {
+    padding: 0% !important;
+  }
+  .slicke figure {
+    border: 1px solid #BCC4DB;
+    padding: 20px 0px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #kategorije h2, #sneg h2 {
+    font-size: 2em;
+  }
+  #ex1 img {
+    width: 100%;
+  }
+  #ex1 p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #ex1 p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=style1.css.map */

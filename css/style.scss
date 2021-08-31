@@ -1,0 +1,54 @@
+*{
+    font-size: 20px;
+}
+a{
+    text-decoration: none !important;
+}
+#slajder{
+    background-image: url('../img/slajder.jpg');
+    height: 700px;
+    background-size: cover;
+}
+.centar{
+    background-color: #F9E02E;
+}
+
+  .prosoHover{
+    position: relative !important;
+    width: 50% !important;
+    &:hover {
+        .srednje{
+            opacity: 1 !important;
+        }
+        .image {
+            opacity: 0.3 !important;
+          }
+      }
+  }
+
+.slikaIspod {
+    opacity: 1 !important;
+    display: block !important;
+    width: 100% !important; 
+    height: auto !important;
+    transition: .5s ease !important;
+    backface-visibility: hidden !important;
+  }
+  
+  .srednje {
+    transition: .5s ease !important;
+    opacity: 0 !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important; 
+    transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important; 
+    text-align: center !important;
+  }
+  
+.tekstPreko {
+    background-color: #4CAF50 !important;
+    color: white !important;
+    font-size: 16px !important;
+    padding: 16px 32px !important;
+  }
